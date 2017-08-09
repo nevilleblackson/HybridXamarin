@@ -6,8 +6,8 @@
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
   <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
   <application android:label="RSR.Android" android:name="android.app.Application" android:allowBackup="true" android:debuggable="true">
-    <activity android:configChanges="orientation|screenSize" android:label="RSR" android:theme="@style/MainTheme" android:name="md5ce5c2a53bf22be59d1e4c76b5e4782b0.MainActivity" />
-    <activity android:icon="@drawable/ic_launcher" android:label="SplashScreen" android:noHistory="true" android:theme="@style/MyTheme.Splash" android:name="md5ce5c2a53bf22be59d1e4c76b5e4782b0.SplashActivity">
+    <activity android:configChanges="orientation|screenSize" android:theme="@style/MainTheme" android:name="md5ce5c2a53bf22be59d1e4c76b5e4782b0.MainActivity" />
+    <activity android:icon="@drawable/ic_launcher" android:label="RSR" android:noHistory="true" android:theme="@style/MyTheme.Splash" android:name="md5ce5c2a53bf22be59d1e4c76b5e4782b0.SplashActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />

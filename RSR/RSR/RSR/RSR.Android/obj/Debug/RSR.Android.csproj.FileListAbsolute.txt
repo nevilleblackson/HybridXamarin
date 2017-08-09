@@ -48,3 +48,5 @@ C:\Users\Gebruiker\Documents\HybridXamarin\RSR\RSR\RSR\RSR.Android\obj\Debug\res
 C:\Users\Gebruiker\Documents\HybridXamarin\RSR\RSR\RSR\RSR.Android\obj\Debug\res\drawable\splash_logo.png
 C:\Users\Gebruiker\Documents\HybridXamarin\RSR\RSR\RSR\RSR.Android\obj\Debug\res\drawable\splash.xml
 C:\Users\Gebruiker\Documents\HybridXamarin\RSR\RSR\RSR\RSR.Android\obj\Debug\res\drawable\ic_launcher.png
+C:\Users\Gebruiker\Documents\HybridXamarin\RSR\RSR\RSR\RSR.Android\obj\Debug\RSR.Droid.Splash.xaml.g.cs
+C:\Users\Gebruiker\Documents\HybridXamarin\RSR\RSR\RSR\RSR.Android\obj\Debug\res\drawable\main_btn_info.png

@@ -16,7 +16,7 @@ using Android.Util;
 namespace RSR.Droid
 {
 
-    [Activity(Theme = "@style/MyTheme.Splash", MainLauncher = true, NoHistory = true, Label = "SplashScreen", Icon = "@drawable/ic_launcher")]
+    [Activity(Theme = "@style/MyTheme.Splash", MainLauncher = true, NoHistory = true, Label = "RSR", Icon = "@drawable/ic_launcher")]
     public class SplashActivity : AppCompatActivity
     {
         //static readonly string TAG = "X:" + typeof(SplashActivity).Name;
@@ -36,9 +36,8 @@ namespace RSR.Droid
         }
 
         // Simulates background work that happens behind the splash screen
-        async void SimulateStartup()
+        void SimulateStartup()
         {
-            await Task.Delay(100);
             StartActivity(new Intent(Application.Context, typeof(MainActivity)));
         }
     }
