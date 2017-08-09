@@ -12,10 +12,16 @@ namespace RSR
 		public MainPage()
 		{
 			InitializeComponent();
-		}
+        }
 
-        public void StartMap(object sender, EventArgs args) {
+        void onInfoIconClicked(object sender, EventArgs e)
+        {
+            Navigation.PushModalAsync(new AboutApp(), true);
+        }
 
+        public void StartMap(object sender, EventArgs args)
+        {
+           
         }
 
     }
