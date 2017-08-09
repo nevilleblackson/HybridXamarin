@@ -38,7 +38,7 @@ namespace RSR.Droid
         // Simulates background work that happens behind the splash screen
         void SimulateStartup()
         {
-            StartActivity(new Intent(Application.Context, typeof(MainActivity)));
+           StartActivity(new Intent(Application.Context, typeof(MainActivity)));
         }
     }
 }
