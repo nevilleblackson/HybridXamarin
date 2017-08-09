@@ -11,8 +11,7 @@
 namespace RSR {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\Gebruiker\\Documents\\Visual Studio 2017\\Projects\\HybridRSR\\RSR\\RSR\\RSR\\RS" +
-        "R\\MainPage.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\Gebruiker\\Documents\\HybridXamarin\\RSR\\RSR\\RSR\\RSR\\MainPage.xaml")]
     public partial class MainPage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
