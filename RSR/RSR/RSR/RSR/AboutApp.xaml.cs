@@ -9,12 +9,16 @@ using Xamarin.Forms.Xaml;
 
 namespace RSR
 {
-	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class AboutApp : ContentPage
-	{
-		public AboutApp ()
-		{
-			InitializeComponent ();
-		}
-	}
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class AboutApp : ContentPage
+    {
+        public AboutApp()
+        {
+            InitializeComponent();
+        }
+        void onBackBtnClicked(object sender, EventArgs e)
+        {
+            Navigation.PushModalAsync(new MainPage(), false);
+        }
+    }
 }
