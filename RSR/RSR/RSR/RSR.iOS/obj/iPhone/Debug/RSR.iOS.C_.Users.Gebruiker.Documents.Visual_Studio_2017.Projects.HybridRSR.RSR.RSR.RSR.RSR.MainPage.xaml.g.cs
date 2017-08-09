@@ -12,12 +12,12 @@ namespace RSR {
     
     
     [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\Gebruiker\\Documents\\Visual Studio 2017\\Projects\\HybridRSR\\RSR\\RSR\\RSR\\RS" +
-        "R\\App.xaml")]
-    public partial class App : global::Xamarin.Forms.Application {
+        "R\\MainPage.xaml")]
+    public partial class MainPage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
-            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(App));
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(MainPage));
         }
     }
 }
