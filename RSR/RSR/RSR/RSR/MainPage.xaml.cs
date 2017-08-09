@@ -21,7 +21,7 @@ namespace RSR
 
         public void StartMap(object sender, EventArgs args)
         {
-           
+            Navigation.PushModalAsync(new MapPage(), false);
         }
 
     }
