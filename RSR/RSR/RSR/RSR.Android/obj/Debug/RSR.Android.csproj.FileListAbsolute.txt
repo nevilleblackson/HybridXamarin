@@ -104,3 +104,4 @@ C:\Users\Gebruiker\Documents\Visual Studio 2017\Projects\HybridRSR\RSR\RSR\RSR\R
 C:\Users\Gebruiker\Documents\Visual Studio 2017\Projects\HybridRSR\RSR\RSR\RSR\RSR.Android\obj\Debug\res\drawable\main_btn_info.png
 C:\Users\Gebruiker\Documents\Visual Studio 2017\Projects\HybridRSR\RSR\RSR\RSR\RSR.Android\obj\Debug\RSR.Droid.AboutApp.xaml.g.cs
 C:\Users\Gebruiker\Documents\Visual Studio 2017\Projects\HybridRSR\RSR\RSR\RSR\RSR.Android\obj\Debug\res\drawable\splash_logo_rsr.png
+C:\Users\Gebruiker\Documents\Visual Studio 2017\Projects\HybridRSR\RSR\RSR\RSR\RSR.Android\obj\Debug\res\drawable\menu_arrow.png

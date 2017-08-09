@@ -18,7 +18,7 @@ namespace RSR
         }
         void onBackBtnClicked(object sender, EventArgs e)
         {
-            Navigation.PushModalAsync(new MainPage(), false);
+            base.SendBackButtonPressed();
         }
     }
 }

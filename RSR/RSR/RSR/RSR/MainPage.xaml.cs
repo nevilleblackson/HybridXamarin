@@ -16,7 +16,7 @@ namespace RSR
 
         void onInfoIconClicked(object sender, EventArgs e)
         {
-            Navigation.PushModalAsync(new AboutApp(), true);
+            Navigation.PushModalAsync(new AboutApp(), false);
         }
 
         public void StartMap(object sender, EventArgs args)
