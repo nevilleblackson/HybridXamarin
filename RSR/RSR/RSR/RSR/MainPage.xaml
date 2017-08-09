@@ -18,7 +18,7 @@
         </Grid>
 
         <Button VerticalOptions="EndAndExpand" 
-                Margin="20,0,20,0"
+                Margin="20,0,20,15"
                 Text="RSR Pechhulp"
                 BackgroundColor="LightSeaGreen"  
                 TextColor="White"
