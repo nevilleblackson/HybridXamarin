@@ -5,15 +5,13 @@
              x:Class="RSR.MainPage"
              BackgroundImage="main_bg.jpg">
 
-    <StackLayout
-        Padding="40,0,40,20"
-        VerticalOptions="End">
+        <StackLayout>
 
-        <Button 
-            Text="RSR Pechhulp"
-            BackgroundColor="LightSeaGreen"  
-            Clicked="StartMap"/>
-        
-    </StackLayout>
+            <Image
+                Source="splash">
+
+            </Image>
+
+        </StackLayout>
     
 </ContentPage>
