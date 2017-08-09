@@ -100,3 +100,6 @@ C:\Users\Gebruiker\Documents\Visual Studio 2017\Projects\HybridRSR\RSR\RSR\RSR\R
 C:\Users\Gebruiker\Documents\Visual Studio 2017\Projects\HybridRSR\RSR\RSR\RSR\RSR.Android\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll.mdb
 C:\Users\Gebruiker\Documents\HybridXamarin\RSR\RSR\RSR\RSR.Android\obj\Debug\RSR.Droid.Splash.xaml.g.cs
 C:\Users\Gebruiker\Documents\HybridXamarin\RSR\RSR\RSR\RSR.Android\obj\Debug\res\drawable\main_btn_info.png
+C:\Users\Gebruiker\Documents\Visual Studio 2017\Projects\HybridRSR\RSR\RSR\RSR\RSR.Android\obj\Debug\RSR.Droid.Splash.xaml.g.cs
+C:\Users\Gebruiker\Documents\Visual Studio 2017\Projects\HybridRSR\RSR\RSR\RSR\RSR.Android\obj\Debug\res\drawable\main_btn_info.png
+C:\Users\Gebruiker\Documents\Visual Studio 2017\Projects\HybridRSR\RSR\RSR\RSR\RSR.Android\obj\Debug\RSR.Droid.AboutApp.xaml.g.cs
