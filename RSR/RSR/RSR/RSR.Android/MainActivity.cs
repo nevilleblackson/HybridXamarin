@@ -61,11 +61,10 @@ namespace RSR.Droid
             if (locMgr.IsProviderEnabled(Provider))
             {
                 locMgr.RequestLocationUpdates(Provider, 2000, 1, this);
-                Log.Info("woow2", Provider + " is not available. Does the device have location services enabled?");
             }
             else
             {
-                Log.Info("woow", Provider + " is not available. Does the device have location services enabled?");
+
             }
         }
 
