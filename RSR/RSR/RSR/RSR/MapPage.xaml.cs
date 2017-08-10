@@ -40,5 +40,9 @@ namespace RSR
             new Position(Latitude, Longitude), Distance.FromMeters(10)));
 
         }
+        void OnBackBtnClicked(object sender, EventArgs e)
+        {
+            base.SendBackButtonPressed();
+        }
     }
 }

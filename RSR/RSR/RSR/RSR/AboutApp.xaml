@@ -1,27 +1,31 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-
     <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="RSR.AboutApp">
     <ContentPage.Content>
-        <StackLayout Spacing="0">
+        <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand" Spacing="0">
 
-            <Grid BackgroundColor="LightSeaGreen" HeightRequest="72">
+                    <Grid BackgroundColor="LightSeaGreen" HeightRequest="72">
                 <Image Source="menu_arrow.png" HorizontalOptions="StartAndExpand" Margin="20,0,10,0" HeightRequest="32">
                     <Image.GestureRecognizers>
                         <TapGestureRecognizer Tapped="OnBackBtnClicked"/>
                     </Image.GestureRecognizers>
                 </Image>
-                <Label Text="Over RSR" TextColor="White" Font="Large" Margin="45,25,0,0"/>
+                <Label Text="Over RSR" TextColor="White" Font="Large" Margin="45,25,0,0">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnBackBtnClicked"/>
+                    </Label.GestureRecognizers>
+                </Label>
             </Grid>
+            <ScrollView Orientation="Vertical" VerticalOptions="FillAndExpand">
+                <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand">
 
-            <Image Source="info_bg.jpg"/>
-            
-            
-            <Label Text="Met de hulpmiddelen van RSR blijft u mobiel. RSR is de leverancier van de hulpmiddelen in de regio Noordoost-Nederland. Gedegen kennis en jarenlange ervaring zit in ons DNA verweven en leidt tot het beste adviest."
+                <Image Source="info_bg.jpg"/>
+
+                <Label Text="Met de hulpmiddelen van RSR blijft u mobiel. RSR is de leverancier van de hulpmiddelen in de regio Noordoost-Nederland. Gedegen kennis en jarenlange ervaring zit in ons DNA verweven en leidt tot het beste adviest."
                    TextColor="Black"
                    Margin="15,20,20,15"/>
-
+          
             <Label HorizontalOptions = "CenterAndExpand" Margin="15,20,20,15">
                 <Label.GestureRecognizers>
                     <TapGestureRecognizer Tapped="onWebLinkClicked"/>
@@ -36,8 +40,10 @@
                     </FormattedString>
                 </Label.FormattedText>
             </Label>
-
+                </StackLayout>
+            </ScrollView>
         </StackLayout>
         
+
     </ContentPage.Content>
 </ContentPage>
