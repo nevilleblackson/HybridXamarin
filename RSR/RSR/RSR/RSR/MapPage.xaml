@@ -4,7 +4,7 @@
              x:Class="RSR.MapPage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="<Map Content>" />
+            <Label Text="Map Content" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

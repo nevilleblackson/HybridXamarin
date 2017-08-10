@@ -20,5 +20,9 @@ namespace RSR
         {
             base.SendBackButtonPressed();
         }
+        void onWebLinkClicked(object sender, EventArgs e)
+        {
+            Device.OpenUri(new Uri("http://www.rsr.nl/"));
+        }
     }
 }

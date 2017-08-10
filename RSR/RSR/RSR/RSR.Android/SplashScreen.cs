@@ -16,7 +16,7 @@ using Android.Util;
 namespace RSR.Droid
 {
 
-    [Activity(Theme = "@style/MyTheme.Splash", MainLauncher = true, NoHistory = true, Label = "RSR", Icon = "@drawable/ic_launcher")]
+    [Activity(MainLauncher = true, NoHistory = true, Label = "RSR", Icon = "@drawable/ic_launcher", Theme = "@style/MyTheme.Splash")]
     public class SplashActivity : AppCompatActivity
     {
         //static readonly string TAG = "X:" + typeof(SplashActivity).Name;
