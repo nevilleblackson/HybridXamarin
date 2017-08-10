@@ -12,22 +12,22 @@ using Android.Widget;
 using System.Threading.Tasks;
 using Android.Support.V7.App;
 using Android.Util;
+using Xamarin.Forms;
+using Xamarin;
 
 namespace RSR.Droid
 {
 
-    [Activity(Theme = "@style/MyTheme.Splash", MainLauncher = true, NoHistory = true, Label = "RSR", Icon = "@drawable/ic_launcher")]
+    [Activity(Theme = "@style/MyTheme.Splash", MainLauncher = true, NoHistory = true, Label = "RSR", Icon = "@drawable/ic_launcher",FinishOnTaskLaunch = true,ScreenOrientation = Android.Content.PM.ScreenOrientation.Portrait)]
     public class SplashActivity : AppCompatActivity
     {
-        //static readonly string TAG = "X:" + typeof(SplashActivity).Name;
 
         public override void OnCreate(Bundle savedInstanceState, PersistableBundle persistentState)
         {
             base.OnCreate(savedInstanceState, persistentState);
-            //Log.Debug(TAG, "SplashActivity.OnCreate");
+            FormsMaps.Init(this, savedInstanceState);
         }
 
-        // Launches the startup task
         protected override void OnResume()
         {
             base.OnResume();
@@ -35,10 +35,9 @@ namespace RSR.Droid
             startupWork.Start();
         }
 
-        // Simulates background work that happens behind the splash screen
         void SimulateStartup()
         {
-           StartActivity(new Intent(Application.Context, typeof(MainActivity)));
+           StartActivity(new Intent(BaseContext, typeof(MainActivity)));
         }
     }
 }

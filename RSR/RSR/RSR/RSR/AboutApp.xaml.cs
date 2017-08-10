@@ -16,7 +16,7 @@ namespace RSR
         {
             InitializeComponent();
         }
-        void onBackBtnClicked(object sender, EventArgs e)
+        void OnBackBtnClicked(object sender, EventArgs e)
         {
             base.SendBackButtonPressed();
         }

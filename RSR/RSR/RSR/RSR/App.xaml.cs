@@ -13,7 +13,7 @@ namespace RSR
 		{
 			InitializeComponent();
 
-			MainPage = new RSR.MainPage();
+			MainPage = new RSR.MapPage();
 		}
 
 		protected override void OnStart ()
