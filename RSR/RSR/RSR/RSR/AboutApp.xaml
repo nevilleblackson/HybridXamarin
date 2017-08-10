@@ -9,7 +9,7 @@
             <Grid BackgroundColor="LightSeaGreen" HeightRequest="72">
                 <Image Source="menu_arrow.png" HorizontalOptions="StartAndExpand" Margin="20,0,10,0" HeightRequest="32">
                     <Image.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="onBackBtnClicked"/>
+                        <TapGestureRecognizer Tapped="OnBackBtnClicked"/>
                     </Image.GestureRecognizers>
                 </Image>
                 <Label Text="Over RSR" TextColor="White" Font="Large" Margin="45,25,0,0"/>

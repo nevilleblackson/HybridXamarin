@@ -9,9 +9,14 @@ C:\Users\Gebruiker\Documents\Visual Studio 2017\Projects\HybridRSR\RSR\RSR\RSR\R
 C:\Users\Gebruiker\Documents\Visual Studio 2017\Projects\HybridRSR\RSR\RSR\RSR\RSR.Android\obj\Debug\android\assets\Xamarin.Android.Support.v7.RecyclerView.dll
 C:\Users\Gebruiker\Documents\Visual Studio 2017\Projects\HybridRSR\RSR\RSR\RSR\RSR.Android\obj\Debug\android\assets\Xamarin.Android.Support.Vector.Drawable.dll
 C:\Users\Gebruiker\Documents\Visual Studio 2017\Projects\HybridRSR\RSR\RSR\RSR\RSR.Android\obj\Debug\android\assets\Xamarin.Forms.Core.dll
+C:\Users\Gebruiker\Documents\Visual Studio 2017\Projects\HybridRSR\RSR\RSR\RSR\RSR.Android\obj\Debug\android\assets\Xamarin.Forms.Maps.Android.dll
+C:\Users\Gebruiker\Documents\Visual Studio 2017\Projects\HybridRSR\RSR\RSR\RSR\RSR.Android\obj\Debug\android\assets\Xamarin.Forms.Maps.dll
 C:\Users\Gebruiker\Documents\Visual Studio 2017\Projects\HybridRSR\RSR\RSR\RSR\RSR.Android\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll
 C:\Users\Gebruiker\Documents\Visual Studio 2017\Projects\HybridRSR\RSR\RSR\RSR\RSR.Android\obj\Debug\android\assets\Xamarin.Forms.Platform.dll
 C:\Users\Gebruiker\Documents\Visual Studio 2017\Projects\HybridRSR\RSR\RSR\RSR\RSR.Android\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll
+C:\Users\Gebruiker\Documents\Visual Studio 2017\Projects\HybridRSR\RSR\RSR\RSR\RSR.Android\obj\Debug\android\assets\Xamarin.GooglePlayServices.Base.dll
+C:\Users\Gebruiker\Documents\Visual Studio 2017\Projects\HybridRSR\RSR\RSR\RSR\RSR.Android\obj\Debug\android\assets\Xamarin.GooglePlayServices.Basement.dll
+C:\Users\Gebruiker\Documents\Visual Studio 2017\Projects\HybridRSR\RSR\RSR\RSR\RSR.Android\obj\Debug\android\assets\Xamarin.GooglePlayServices.Maps.dll
 C:\Users\Gebruiker\Documents\Visual Studio 2017\Projects\HybridRSR\RSR\RSR\RSR\RSR.Android\obj\Debug\android\assets\Java.Interop.dll
 C:\Users\Gebruiker\Documents\Visual Studio 2017\Projects\HybridRSR\RSR\RSR\RSR\RSR.Android\obj\Debug\android\assets\Mono.Android.dll
 C:\Users\Gebruiker\Documents\Visual Studio 2017\Projects\HybridRSR\RSR\RSR\RSR\RSR.Android\obj\Debug\android\assets\mscorlib.dll
@@ -36,6 +41,7 @@ C:\Users\Gebruiker\Documents\Visual Studio 2017\Projects\HybridRSR\RSR\RSR\RSR\R
 C:\Users\Gebruiker\Documents\Visual Studio 2017\Projects\HybridRSR\RSR\RSR\RSR\RSR.Android\obj\Debug\android\assets\System.Runtime.Extensions.dll
 C:\Users\Gebruiker\Documents\Visual Studio 2017\Projects\HybridRSR\RSR\RSR\RSR\RSR.Android\obj\Debug\android\assets\System.Linq.dll
 C:\Users\Gebruiker\Documents\Visual Studio 2017\Projects\HybridRSR\RSR\RSR\RSR\RSR.Android\obj\Debug\android\assets\System.Reflection.Extensions.dll
+C:\Users\Gebruiker\Documents\Visual Studio 2017\Projects\HybridRSR\RSR\RSR\RSR\RSR.Android\obj\Debug\android\assets\System.Resources.ResourceManager.dll
 C:\Users\Gebruiker\Documents\Visual Studio 2017\Projects\HybridRSR\RSR\RSR\RSR\RSR.Android\obj\Debug\android\assets\System.Net.Http.dll
 C:\Users\Gebruiker\Documents\Visual Studio 2017\Projects\HybridRSR\RSR\RSR\RSR\RSR.Android\obj\Debug\android\assets\System.Runtime.Serialization.dll
 C:\Users\Gebruiker\Documents\Visual Studio 2017\Projects\HybridRSR\RSR\RSR\RSR\RSR.Android\obj\Debug\android\assets\System.ServiceModel.Internals.dll

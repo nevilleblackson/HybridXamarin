@@ -14,7 +14,7 @@ namespace RSR
 			InitializeComponent();
         }
 
-        void onInfoIconClicked(object sender, EventArgs e)
+        void OnInfoIconClicked(object sender, EventArgs e)
         {
             Navigation.PushModalAsync(new AboutApp(), false);
         }
