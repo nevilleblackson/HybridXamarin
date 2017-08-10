@@ -4,12 +4,29 @@
              xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
              x:Class="RSR.MapPage">
     <ContentPage.Content>
-        <StackLayout VerticalOptions="StartAndExpand" Padding="30">
-            <maps:Map WidthRequest="320" HeightRequest="200"
-            x:Name="MyMap"
-            IsShowingUser="true"
-            MapType="Hybrid"
-        />
-        </StackLayout>
+        
+            <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand" Spacing="0">
+
+                <Grid BackgroundColor="LightSeaGreen" HeightRequest="72">
+                    <Image Source="menu_arrow.png" HorizontalOptions="StartAndExpand" Margin="20,0,10,0" HeightRequest="32">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnBackBtnClicked"/>
+                        </Image.GestureRecognizers>
+                    </Image>
+                <Label Text="RSR Pechhulp" TextColor="White" Font="Large" Margin="45,25,0,0">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnBackBtnClicked"/>
+                    </Label.GestureRecognizers>
+                </Label>
+                </Grid>
+                
+                <StackLayout VerticalOptions="StartAndExpand" Padding="30">
+                <maps:Map WidthRequest="320" HeightRequest="200"
+                x:Name="MyMap"
+                IsShowingUser="true"
+                MapType="Hybrid"/>
+
+                </StackLayout>
+            </StackLayout>
     </ContentPage.Content>
 </ContentPage>
