@@ -12,6 +12,7 @@
   <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
   <uses-feature android:glEsVersion="0x00020000" android:required="true" />
   <application android:label="RSR.Android" android:name="android.app.Application" android:allowBackup="true" android:debuggable="true">
+    <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyB0IhnX4fNNcXEtDoLjV0MQwtepDM_oWsw" />
     <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
     <activity android:configChanges="orientation|screenSize" android:theme="@style/MainTheme" android:name="md5ce5c2a53bf22be59d1e4c76b5e4782b0.MainActivity" />
     <activity android:icon="@drawable/ic_launcher" android:label="RSR" android:noHistory="true" android:theme="@style/MyTheme.Splash" android:name="md5ce5c2a53bf22be59d1e4c76b5e4782b0.SplashActivity">
@@ -29,5 +30,4 @@
       </intent-filter>
     </receiver>
   </application>
-  <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyB0IhnX4fNNcXEtDoLjV0MQwtepDM_oWsw" />
 </manifest>

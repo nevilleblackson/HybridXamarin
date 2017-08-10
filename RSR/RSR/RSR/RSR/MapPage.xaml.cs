@@ -17,8 +17,6 @@ namespace RSR
         {
             InitializeComponent();
 
-
-
         }
     }
 }
