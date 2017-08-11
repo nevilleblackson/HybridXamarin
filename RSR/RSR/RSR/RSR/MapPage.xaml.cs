@@ -12,17 +12,19 @@ using Xamarin.Forms.Maps;
 namespace RSR
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class MapPage : ContentPage {
+	public partial class MapPage : ContentPage
+    {
 
-      
+        public static bool avalable;
+        public static Map mMyMap;
+
+        
         public MapPage()
         {
+            avalable = true;
             InitializeComponent();
 
-            var Latitude = 52.479189;
-            var Longitude = 5.899431;
-
-            var position = new Position(Latitude, Longitude); // Latitude, Longitude
+            var position = new Position(51.99975, 4.9998); // Latitude, Longitude
 
             var pin = new Pin
             {
@@ -32,17 +34,27 @@ namespace RSR
                 Address = "custom detail info"
             };
 
-            MyMap.Pins.Clear();
-            MyMap.Pins.Add(pin);
+            mMyMap = MyMap;
 
-            MyMap.MoveToRegion(
+            mMyMap.Pins.Clear();
+            mMyMap.Pins.Add(pin);
+
+            mMyMap.MoveToRegion(
             MapSpan.FromCenterAndRadius(
-            new Position(Latitude, Longitude), Distance.FromMeters(10)));
+            new Position(51.99975, 4.9998), Distance.FromMeters(10)));
 
         }
+
+        public string GetLocation(string latitude, string longitude)
+        {
+            throw new NotImplementedException();
+        }
+
         void OnBackBtnClicked(object sender, EventArgs e)
         {
-            base.SendBackButtonPressed();
-        }
+            avalable = false; 
+            SendBackButtonPressed();
+        } 
+
     }
 }
