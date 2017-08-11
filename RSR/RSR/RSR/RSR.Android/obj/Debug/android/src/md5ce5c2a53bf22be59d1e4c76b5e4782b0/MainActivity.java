@@ -12,7 +12,10 @@ public class MainActivity
 	static {
 		__md_methods = 
 			"n_onCreate:(Landroid/os/Bundle;)V:GetOnCreate_Landroid_os_Bundle_Handler\n" +
+<<<<<<< HEAD
 			"n_onResume:()V:GetOnResumeHandler\n" +
+=======
+>>>>>>> 10e6882ca95e3d7ed6d9b935ddabbafc8acfb778
 			"n_onPause:()V:GetOnPauseHandler\n" +
 			"n_onLocationChanged:(Landroid/location/Location;)V:GetOnLocationChanged_Landroid_location_Location_Handler:Android.Locations.ILocationListenerInvoker, Mono.Android, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null\n" +
 			"n_onProviderDisabled:(Ljava/lang/String;)V:GetOnProviderDisabled_Ljava_lang_String_Handler:Android.Locations.ILocationListenerInvoker, Mono.Android, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null\n" +
@@ -39,6 +42,7 @@ public class MainActivity
 	private native void n_onCreate (android.os.Bundle p0);
 
 
+<<<<<<< HEAD
 	public void onResume ()
 	{
 		n_onResume ();
@@ -47,6 +51,8 @@ public class MainActivity
 	private native void n_onResume ();
 
 
+=======
+>>>>>>> 10e6882ca95e3d7ed6d9b935ddabbafc8acfb778
 	public void onPause ()
 	{
 		n_onPause ();

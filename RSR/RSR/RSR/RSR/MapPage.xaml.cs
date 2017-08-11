@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using Xamarin.Forms.Maps;
-
+using Android.Content;
 
 namespace RSR
 {
@@ -21,7 +21,6 @@ namespace RSR
         
         public MapPage()
         {
-            avalable = true;
             InitializeComponent();
 
             var position = new Position(51.99975, 4.9998); // Latitude, Longitude
@@ -34,27 +33,34 @@ namespace RSR
                 Address = "custom detail info"
             };
 
-            mMyMap = MyMap;
+            MyMap.Pins.Clear();
+            MyMap.Pins.Add(pin);
 
-            mMyMap.Pins.Clear();
-            mMyMap.Pins.Add(pin);
-
-            mMyMap.MoveToRegion(
+            MyMap.MoveToRegion(
             MapSpan.FromCenterAndRadius(
-            new Position(51.99975, 4.9998), Distance.FromMeters(12)));
+            new Position(51.99975, 4.9998), Distance.FromMeters(10)));
 
-        }
-
-        public string GetLocation(string latitude, string longitude)
-        {
-            throw new NotImplementedException();
         }
 
         void OnBackBtnClicked(object sender, EventArgs e)
         {
-            avalable = false; 
-            SendBackButtonPressed();
-        } 
-
+            base.SendBackButtonPressed();
+        }
+        void OnCallDialogClicked(object sender, EventArgs e)
+        {
+            OpenCallDialogButton.IsVisible = false;
+            CallDialog.IsVisible = true;
+            CloseCallDialogButton.IsVisible = true;
+        }
+        void OnCloseDialogButtonClicked(object sender, EventArgs e)
+        {
+            CallDialog.IsVisible = false;
+            CloseCallDialogButton.IsVisible = false;
+            OpenCallDialogButton.IsVisible = true;
+        }
+        void OnCallButtonClicked(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

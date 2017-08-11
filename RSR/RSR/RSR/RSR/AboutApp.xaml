@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-    <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="RSR.AboutApp">
     <ContentPage.Content>
         <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand" Spacing="0">
 
-                    <Grid BackgroundColor="LightSeaGreen" HeightRequest="72">
+            <Grid BackgroundColor="LightSeaGreen" HeightRequest="72">
                 <Image Source="menu_arrow.png" HorizontalOptions="StartAndExpand" Margin="20,0,10,0" HeightRequest="32">
                     <Image.GestureRecognizers>
                         <TapGestureRecognizer Tapped="OnBackBtnClicked"/>
@@ -20,30 +20,30 @@
             <ScrollView Orientation="Vertical" VerticalOptions="FillAndExpand">
                 <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand">
 
-                <Image Source="info_bg.jpg"/>
+                    <Image Source="info_bg.jpg"/>
 
-                <Label Text="Met de hulpmiddelen van RSR blijft u mobiel. RSR is de leverancier van de hulpmiddelen in de regio Noordoost-Nederland. Gedegen kennis en jarenlange ervaring zit in ons DNA verweven en leidt tot het beste adviest."
+                    <Label Text="Met de hulpmiddelen van RSR blijft u mobiel. RSR is de leverancier van de hulpmiddelen in de regio Noordoost-Nederland. Gedegen kennis en jarenlange ervaring zit in ons DNA verweven en leidt tot het beste adviest."
                    TextColor="Black"
                    Margin="15,20,20,15"/>
-          
-            <Label HorizontalOptions = "CenterAndExpand" Margin="15,20,20,15">
-                <Label.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="onWebLinkClicked"/>
-                </Label.GestureRecognizers>
-                <Label.FormattedText>
-                    <FormattedString>
-                        <FormattedString.Spans>
-                            <Span ForegroundColor="Black" Text = "Wilt u meer weten over onze producten en diensten, kijk dan op" />
-                            <Span ForegroundColor="LightSkyBlue" Text = " www.rsr.nl "/>
-                            <Span ForegroundColor="Black" Text = "of bezoek onze showrooms in Silvolde en Nieuweleusen. We zijn iedere werkdag geopend van 8.00 tot 17.00 uur. Hier kunt u diverse hulpmiddelen uitproberen en rustig bekijken wat goed bij uw situatie aansluit. Samen met u zoeken we naar het hulpmiddel dat bij u past. RSR maakt mensen mobiel."/>
-                        </FormattedString.Spans>
-                    </FormattedString>
-                </Label.FormattedText>
-            </Label>
+
+                    <Label HorizontalOptions = "CenterAndExpand" Margin="15,20,20,15">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="onWebLinkClicked"/>
+                        </Label.GestureRecognizers>
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <FormattedString.Spans>
+                                    <Span ForegroundColor="Black" Text = "Wilt u meer weten over onze producten en diensten, kijk dan op" />
+                                    <Span ForegroundColor="LightSkyBlue" Text = " www.rsr.nl "/>
+                                    <Span ForegroundColor="Black" Text = "of bezoek onze showrooms in Silvolde en Nieuweleusen. We zijn iedere werkdag geopend van 8.00 tot 17.00 uur. Hier kunt u diverse hulpmiddelen uitproberen en rustig bekijken wat goed bij uw situatie aansluit. Samen met u zoeken we naar het hulpmiddel dat bij u past. RSR maakt mensen mobiel."/>
+                                </FormattedString.Spans>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
                 </StackLayout>
             </ScrollView>
         </StackLayout>
-        
+
 
     </ContentPage.Content>
 </ContentPage>

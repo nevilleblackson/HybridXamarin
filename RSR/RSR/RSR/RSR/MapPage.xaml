@@ -3,32 +3,67 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
              x:Class="RSR.MapPage">
-    <ContentPage.Content>
 
-        <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand" Spacing="0">
+    <RelativeLayout>
+        <Grid BackgroundColor="LightSeaGreen"
+              RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent,Property=Height,Factor=0.13,Constant=0}"
+                RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent,Property=Width,Factor=1,Constant=0}"
+                RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent,Property=Height,Factor=0,Constant=0}"
+                RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent,Property=Width,Factor=0,Constant=0}">
+               
+        <Image Source="menu_arrow.png" HorizontalOptions="StartAndExpand" Margin="20,25,10,0" HeightRequest="32">
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer Tapped="OnBackBtnClicked"/>
+            </Image.GestureRecognizers>
+        </Image>
+        <Label Text="RSR Pechhulp" TextColor="White" Font="Large" Margin="45,40,0,0">
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer Tapped="OnBackBtnClicked"/>
+            </Label.GestureRecognizers>
+        </Label>
+        </Grid>
 
-                <Grid BackgroundColor="LightSeaGreen" HeightRequest="72">
-                    <Image Source="menu_arrow.png" HorizontalOptions="StartAndExpand" Margin="20,0,10,0" HeightRequest="32">
-                        <Image.GestureRecognizers>
-                            <TapGestureRecognizer Tapped="OnBackBtnClicked"/>
-                        </Image.GestureRecognizers>
-                    </Image>
-                <Label Text="RSR Pechhulp" TextColor="White" Font="Large" Margin="45,25,0,0">
-                    <Label.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="OnBackBtnClicked"/>
-                    </Label.GestureRecognizers>
-                </Label>
-                </Grid>
+               <maps:Map x:Name="MyMap"
+                HasZoomEnabled="True"
+                IsShowingUser="false"
+                MapType="Street"
+                RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent,Property=Height,Factor=0.87,Constant=0}"
+                RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent,Property=Width,Factor=1,Constant=0}"
+                RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent,Property=Height,Factor=0.13,Constant=0}"
+                RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent,Property=Width,Factor=0,Constant=0}"/>
+        
+        <!--Call now Button (only visible when popup dialog is closed)-->
 
-                <StackLayout VerticalOptions="FillAndExpand">
-                    <maps:Map
-            x:Name="MyMap"
-            HasZoomEnabled="True"
-            IsShowingUser="false"
-            MapType="Street"
-                />
+        <Button Text="Bel RSR nu" BackgroundColor="LightSeaGreen" TextColor="White" Clicked="OnCallDialogClicked" x:Name="OpenCallDialogButton"
+                RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent,Property=Height,Factor=0.1,Constant=0}"
+                RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent,Property=Width,Factor=0.6,Constant=0}"
+                RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent,Property=Height,Factor=0.85,Constant=0}"
+                RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent,Property=Width,Factor=0.2,Constant=0}"/>
+        
+        <!--Call RSR dialog -->
 
-                </StackLayout>
-            </StackLayout>
-    </ContentPage.Content>
+        <Button Text="Annuleren" TextColor="White" Font="Small" BackgroundColor="LightSeaGreen" x:Name="CloseCallDialogButton" IsVisible="False" Clicked="OnCloseDialogButtonClicked"
+                RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent,Property=Height,Factor=0.06,Constant=0}"
+                RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent,Property=Width,Factor=0.3,Constant=0}"
+                RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent,Property=Height,Factor=0.67,Constant=0}"
+                RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent,Property=Width,Factor=0.09,Constant=0}"/>
+
+        <Grid BackgroundColor="#5ca2ff4c" x:Name="CallDialog" IsVisible="False"
+              RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent,Property=Height,Factor=0.25,Constant=0}"
+                RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent,Property=Width,Factor=0.8,Constant=0}"
+                RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent,Property=Height,Factor=0.72,Constant=0}"
+                RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent,Property=Width,Factor=0.1,Constant=0}">
+
+            <Label Text="Belkosten" TextColor="White" Font="Large" HorizontalOptions="Center" Margin="0,20,0,20"/>
+            <Label Text="Voor dit nummer betaalt u uw gebruikelijke belkosten." Font="Medium" Margin="50,60,0,25"/>
+            <Button Text="Bel nu" TextColor="White" BackgroundColor="LightSeaGreen" Margin="25,100,25,0" Clicked="OnCallButtonClicked"/>
+
+        </Grid>
+
+
+
+
+
+    </RelativeLayout>
+
 </ContentPage>
