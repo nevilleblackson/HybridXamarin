@@ -12,8 +12,8 @@ using Android.Util;
 
 namespace RSR.Droid
 {
-	[Activity (MainLauncher = false, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation, Theme = "@style/MainTheme")]
-	public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity, ILocationListener
+    [Activity(MainLauncher = false, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation, Theme = "@style/MainTheme")]
+    public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity, ILocationListener
     {
         LocationManager locMgr;
         String latitude = "wow";
@@ -40,7 +40,7 @@ namespace RSR.Droid
 
         public void OnStatusChanged(string provider, [GeneratedEnum] Availability status, Bundle extras)
         {
-            
+
         }
 
         protected override void OnCreate(Bundle bundle)
@@ -66,17 +66,10 @@ namespace RSR.Droid
             }
         }
 
-         protected override void OnPause()
+        protected override void OnPause()
         {
             base.OnPause();
             locMgr.RemoveUpdates(this);
-        }
-
-        public void CallRSR(object sender, EventArgs e)
-        {
-            var uri = Android.Net.Uri.Parse("tel:06612669910");
-            var intent = new Intent(Intent.ActionDial, uri);
-            StartActivity(intent);
         }
     }
 }

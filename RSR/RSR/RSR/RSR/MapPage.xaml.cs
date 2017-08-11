@@ -59,7 +59,7 @@ namespace RSR
         }
         void OnCallButtonClicked(object sender, EventArgs e)
         {
-            
+            Device.OpenUri(new Uri(String.Format("tel:{0}", "0612669910")));
         }
     }
 }
