@@ -4,8 +4,8 @@
              xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
              x:Class="RSR.MapPage">
     <ContentPage.Content>
-        
-            <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand" Spacing="0">
+
+        <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand" Spacing="0">
 
                 <Grid BackgroundColor="LightSeaGreen" HeightRequest="72">
                     <Image Source="menu_arrow.png" HorizontalOptions="StartAndExpand" Margin="20,0,10,0" HeightRequest="32">
@@ -19,12 +19,14 @@
                     </Label.GestureRecognizers>
                 </Label>
                 </Grid>
-                
-                <StackLayout VerticalOptions="StartAndExpand" Padding="30">
-                <maps:Map WidthRequest="320" HeightRequest="200"
-                x:Name="MyMap"
-                IsShowingUser="true"
-                MapType="Hybrid"/>
+
+                <StackLayout VerticalOptions="FillAndExpand">
+                    <maps:Map
+            x:Name="MyMap"
+            HasZoomEnabled="True"
+            IsShowingUser="false"
+            MapType="Street"
+                />
 
                 </StackLayout>
             </StackLayout>
