@@ -7,7 +7,6 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using Xamarin.Forms.Maps;
-using Android.Content;
 
 namespace RSR
 {
@@ -17,13 +16,15 @@ namespace RSR
 
         public static bool avalable;
         public static Map mMyMap;
+        public static double Latitude = 0;
+        public static double Longitude = 0;
 
-        
+
         public MapPage()
         {
             InitializeComponent();
 
-            var position = new Position(51.99975, 4.9998); // Latitude, Longitude
+            var position = new Position(Latitude, Longitude); // Latitude, Longitude
 
             var pin = new Pin
             {
@@ -38,7 +39,7 @@ namespace RSR
 
             MyMap.MoveToRegion(
             MapSpan.FromCenterAndRadius(
-            new Position(51.99975, 4.9998), Distance.FromMeters(10)));
+            new Position(Latitude, Longitude), Distance.FromMeters(10)));
 
         }
 

@@ -20,13 +20,6 @@ namespace RSR.Droid
 
         LocationManager locMgr;
 
-        public void GetLocation(string latitude, string longitude)
-        {
-            var uri = Android.Net.Uri.Parse("tel:06612669910");
-            var intent = new Intent(Intent.ActionDial, uri);
-            StartActivity(intent);
-        }
-
         protected override void OnResume()
         {
             base.OnResume();
@@ -95,11 +88,14 @@ namespace RSR.Droid
 
             if (locMgr.IsProviderEnabled(Provider))
             {
-                locMgr.RequestLocationUpdates(Provider, 0, 0, this);
+                locMgr.GetLastKnownLocation(Provider);
+                locMgr.RequestLocationUpdates("gps", 2000, 0, this);
+                Location loc = locMgr.GetLastKnownLocation(Provider);
+                Latitude = loc.Latitude;
+                Longitude = loc.Longitude;
             }
-
-
         }
+
         public void CallRSR(object sender, EventArgs e)
         {
             var uri = Android.Net.Uri.Parse("tel:06612669910");
