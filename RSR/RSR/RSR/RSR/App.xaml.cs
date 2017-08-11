@@ -16,6 +16,13 @@ namespace RSR
             MainPage = new RSR.MainPage();
         }
 
+        public App(int v)
+        {
+            InitializeComponent();
+
+            MainPage = new RSR.MapPage();
+        }
+
         protected override void OnStart ()
 		{
 			// Handle when your app starts

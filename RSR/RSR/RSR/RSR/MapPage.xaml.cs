@@ -41,7 +41,7 @@ namespace RSR
 
             mMyMap.MoveToRegion(
             MapSpan.FromCenterAndRadius(
-            new Position(51.99975, 4.9998), Distance.FromMeters(10)));
+            new Position(51.99975, 4.9998), Distance.FromMeters(12)));
 
         }
 

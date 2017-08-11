@@ -232,3 +232,4 @@ C:\Users\Gebruiker\Documents\Visual Studio 2017\Projects\HybridRSR\RSR\RSR\RSR\R
 C:\Users\Gebruiker\Documents\Visual Studio 2017\Projects\HybridRSR\RSR\RSR\RSR\RSR.Android\obj\Debug\android\assets\Xamarin.Forms.Core.dll.mdb
 C:\Users\Gebruiker\Documents\Visual Studio 2017\Projects\HybridRSR\RSR\RSR\RSR\RSR.Android\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
 C:\Users\Gebruiker\Documents\Visual Studio 2017\Projects\HybridRSR\RSR\RSR\RSR\RSR.Android\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll.mdb
+C:\Users\Gebruiker\Documents\Visual Studio 2017\Projects\HybridRSR\RSR\RSR\RSR\RSR.Android\obj\Debug\RSR.Android.csprojResolveAssemblyReference.cache
