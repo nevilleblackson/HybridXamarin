@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using Xamarin.Forms.Maps;
-
+using Android.Content;
 
 namespace RSR
 {
@@ -40,9 +40,26 @@ namespace RSR
             new Position(Latitude, Longitude), Distance.FromMeters(10)));
 
         }
+
         void OnBackBtnClicked(object sender, EventArgs e)
         {
             base.SendBackButtonPressed();
+        }
+        void OnCallDialogClicked(object sender, EventArgs e)
+        {
+            OpenCallDialogButton.IsVisible = false;
+            CallDialog.IsVisible = true;
+            CloseCallDialogButton.IsVisible = true;
+        }
+        void OnCloseDialogButtonClicked(object sender, EventArgs e)
+        {
+            CallDialog.IsVisible = false;
+            CloseCallDialogButton.IsVisible = false;
+            OpenCallDialogButton.IsVisible = true;
+        }
+        void OnCallButtonClicked(object sender, EventArgs e)
+        {
+            
         }
     }
 }
