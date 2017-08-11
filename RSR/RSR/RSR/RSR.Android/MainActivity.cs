@@ -1,37 +1,45 @@
-﻿using System;
-
-using Android.App;
+﻿using Android.App;
 using Android.Content.PM;
 using Android.Runtime;
-using Android.Views;
-using Android.Widget;
 using Android.OS;
-using Android.Locations;
+using Xamarin.Forms;
 using Android.Content;
-using Android.Util;
+using RSR.Droid;
+using Android.Locations;
+using System;
+using Xamarin.Forms.Maps;
 
+using static RSR.MapPage;
+
+[assembly: Dependency(typeof(MainActivity))]
 namespace RSR.Droid
 {
     [Activity(MainLauncher = false, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation, Theme = "@style/MainTheme")]
-    public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity, ILocationListener
+    public class MainActivity : Xamarin.Forms.Platform.Android.FormsAppCompatActivity, IStartMap, ILocationListener
     {
+
         LocationManager locMgr;
-        String latitude = "wow";
-        String longitude = "wow";
 
-        public string Longitude { get => longitude; set => longitude = value; }
-
-        public string Latitude { get => latitude; set => latitude = value; }
-
-        public void OnLocationChanged(Location location)
+        protected override void OnResume()
         {
-            latitude = $"Latitude: {location.Latitude}";
-            longitude = $"Longitude: {location.Longitude}";
+            base.OnResume();
+
+            locMgr = GetSystemService(LocationService) as LocationManager;
+
+
+            string Provider = LocationManager.GpsProvider;
+
+
+            if (locMgr.IsProviderEnabled(Provider))
+            {
+                locMgr.RequestLocationUpdates(Provider, 500, 0, this);
+            }
         }
 
-
-        public void OnProviderDisabled(string provider)
+        protected override void OnPause()
         {
+            base.OnPause();
+            locMgr.RemoveUpdates(this);
         }
 
         public void OnProviderEnabled(string provider)
@@ -43,33 +51,65 @@ namespace RSR.Droid
 
         }
 
+        public void OnLocationChanged(Location location)
+        {
+            if (!avalable)
+            {
+                return;
+            }
+
+            var position = new Position(location.Latitude, location.Longitude); // Latitude, Longitude
+
+            var pin = new Pin
+            {
+                Type = PinType.Generic,
+                Position = position,
+                Label = "custom pin",
+                Address = "custom detail info"
+            };
+
+            mMyMap.Pins.Clear();
+            mMyMap.Pins.Add(pin);
+        }
+
+
         protected override void OnCreate(Bundle bundle)
         {
-            locMgr = GetSystemService(Context.LocationService) as LocationManager;
+            base.OnCreate(bundle);
 
             Xamarin.FormsMaps.Init(this, bundle);
 
-            base.OnCreate(bundle);
-
-            global::Xamarin.Forms.Forms.Init(this, bundle);
+            Forms.Init(this, bundle);
             LoadApplication(new RSR.App());
+
+            locMgr = GetSystemService(Context.LocationService) as LocationManager;
 
             String Provider = LocationManager.GpsProvider;
 
             if (locMgr.IsProviderEnabled(Provider))
             {
-                locMgr.RequestLocationUpdates(Provider, 0, 0, this);
-            }
-            else
-            {
-
+                locMgr.GetLastKnownLocation(Provider);
+                locMgr.RequestLocationUpdates("gps", 2000, 0, this);
+                Location loc = locMgr.GetLastKnownLocation(Provider);
+                Latitude = loc.Latitude;
+                Longitude = loc.Longitude;
             }
         }
 
-        protected override void OnPause()
+        public void CallRSR(object sender, EventArgs e)
         {
-            base.OnPause();
-            locMgr.RemoveUpdates(this);
+            var uri = Android.Net.Uri.Parse("tel:06612669910");
+            var intent = new Intent(Intent.ActionDial, uri);
+            StartActivity(intent);
         }
-    }
-}
+
+        public void StartMap()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void OnProviderDisabled(string provider)
+        {
+            throw new NotImplementedException();
+        }
+    }}

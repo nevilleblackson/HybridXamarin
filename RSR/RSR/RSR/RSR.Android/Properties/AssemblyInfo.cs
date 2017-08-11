@@ -36,4 +36,8 @@ using Android.App;
 [assembly: UsesPermission(Android.Manifest.Permission.AccessMockLocation)]
 [assembly: UsesPermission(Android.Manifest.Permission.AccessNetworkState)]
 [assembly: UsesPermission(Android.Manifest.Permission.AccessWifiState)]
+[assembly: UsesPermission(Android.Manifest.Permission.CallPhone)]
+[assembly: UsesPermission(Android.Manifest.Permission.ModifyPhoneState)]
+[assembly: UsesPermission(Android.Manifest.Permission.ReadPhoneState)]
+
 

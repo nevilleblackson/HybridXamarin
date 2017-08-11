@@ -7,20 +7,22 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using Xamarin.Forms.Maps;
-using Android.Content;
 
 namespace RSR
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class MapPage : ContentPage {
+	public partial class MapPage : ContentPage
+    {
 
-      
+        public static bool avalable;
+        public static Map mMyMap;
+        public static double Latitude = 0;
+        public static double Longitude = 0;
+
+
         public MapPage()
         {
             InitializeComponent();
-
-            var Latitude = 52.479189;
-            var Longitude = 5.899431;
 
             var position = new Position(Latitude, Longitude); // Latitude, Longitude
 
