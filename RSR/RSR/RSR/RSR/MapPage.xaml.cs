@@ -1,5 +1,4 @@
-﻿using Plugin.Geolocator;
-using Plugin.Geolocator.Abstractions;
+﻿using Plugin.Geolocator.Abstractions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,18 +8,20 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using Xamarin.Forms.Maps;
+using Plugin.Geolocator;
 
 namespace RSR
 {
-	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class MapPage : ContentPage
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class MapPage : ContentPage
     {
 
         public static bool avalable;
         public static Map mMyMap;
+        public static String mAddresInfo = "UNKNOWN";
         public static double Latitude = 0;
         public static double Longitude = 0;
-
+        Pin pin;
 
         public MapPage()
         {
@@ -28,12 +29,12 @@ namespace RSR
 
             var position = new Xamarin.Forms.Maps.Position(Latitude, Longitude); // Latitude, Longitude
 
-            var pin = new Pin
+            pin = new Pin
             {
                 Type = PinType.Generic,
                 Position = position,
-                Label = "custom pin",
-                Address = "custom detail info"
+                Label = "My location",
+                Address = mAddresInfo
             };
 
             MyMap.Pins.Clear();
