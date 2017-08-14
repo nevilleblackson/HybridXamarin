@@ -10,6 +10,7 @@ using System;
 using Xamarin.Forms.Maps;
 
 using static RSR.MapPage;
+using System.Linq;
 
 [assembly: Dependency(typeof(MainActivity))]
 namespace RSR.Droid
@@ -94,6 +95,8 @@ namespace RSR.Droid
                 Latitude = loc.Latitude;
                 Longitude = loc.Longitude;
             }
+
+            getCurrentAddress();
         }
 
         public void CallRSR(object sender, EventArgs e)
@@ -112,4 +115,29 @@ namespace RSR.Droid
         {
             throw new NotImplementedException();
         }
-    }}
+
+        private async void getCurrentAddress()
+        {
+            try
+            {
+                var currentPosition = new Xamarin.Forms.Maps.Position(Latitude, Longitude);
+                Xamarin.Forms.Maps.Geocoder geoCoder = new Xamarin.Forms.Maps.Geocoder();
+
+                var address = await geoCoder.GetAddressesForPositionAsync(currentPosition);
+
+                String addresInfo = "";
+
+                var possibleAddresses = await geoCoder.GetAddressesForPositionAsync(currentPosition);
+
+                addresInfo += possibleAddresses.ElementAt(0);
+
+                mAddresInfo = addresInfo.Replace(",",",\n");
+
+            }
+            catch
+            {
+            //EMPTY
+            }
+        }
+    }
+}

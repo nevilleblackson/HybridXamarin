@@ -58,11 +58,5 @@
             <Button Text="Bel nu" TextColor="White" BackgroundColor="LightSeaGreen" Margin="25,100,25,0" Clicked="OnCallButtonClicked"/>
 
         </Grid>
-
-
-
-
-
     </RelativeLayout>
-
 </ContentPage>

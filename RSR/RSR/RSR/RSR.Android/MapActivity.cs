@@ -53,10 +53,9 @@ namespace RSR.Droid
                  LatLngBounds AUSTRALIA = new LatLngBounds(
                          new LatLng(Latitude, Longitude), new LatLng(Latitude, Longitude));
 
-        var marker = new MarkerOptions();
+                    var marker = new MarkerOptions();
                     marker.SetPosition(new LatLng(Latitude,Longitude));
-                    marker.SetTitle("My Location");
-                    marker.SetSnippet("TODO dammm niels");
+                    marker.SetTitle(mAddresInfo);
                     marker.SetIcon(BitmapDescriptorFactory.FromResource(Resource.Drawable.map_marker_mini));
 
                 NativeMap.AddMarker(marker);

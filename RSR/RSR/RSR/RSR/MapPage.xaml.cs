@@ -16,6 +16,7 @@ namespace RSR
 
         public static bool avalable;
         public static Map mMyMap;
+        public static String mAddresInfo = "UNKNOWN";
         public static double Latitude = 0;
         public static double Longitude = 0;
 
@@ -23,17 +24,6 @@ namespace RSR
         public MapPage()
         {
             InitializeComponent();
-
-            var position = new Position(Latitude, Longitude); // Latitude, Longitude
-
-            var pin = new Pin
-            {
-                Type = PinType.Generic,
-                Position = position,
-                Label = "custom pin",
-                Address = "custom detail info"
-            };
-
         }
 
         void OnBackBtnClicked(object sender, EventArgs e)
