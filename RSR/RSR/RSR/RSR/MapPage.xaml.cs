@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Plugin.Geolocator;
+using Plugin.Geolocator.Abstractions;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -24,7 +26,7 @@ namespace RSR
         {
             InitializeComponent();
 
-            var position = new Position(Latitude, Longitude); // Latitude, Longitude
+            var position = new Xamarin.Forms.Maps.Position(Latitude, Longitude); // Latitude, Longitude
 
             var pin = new Pin
             {
@@ -39,7 +41,7 @@ namespace RSR
 
             MyMap.MoveToRegion(
             MapSpan.FromCenterAndRadius(
-            new Position(Latitude, Longitude), Distance.FromMeters(10)));
+            new Xamarin.Forms.Maps.Position(Latitude, Longitude), Distance.FromMeters(32)));
 
         }
 
