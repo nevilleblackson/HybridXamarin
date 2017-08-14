@@ -65,6 +65,6 @@
 			Verbosity = "2"
 			OptimizeIL = "true"
 			DebugSymbols = "$(DebugSymbols)"
-			DebugType = "$(DebugType)"/>
+			/>
 	</Target>
 </Project>

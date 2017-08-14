@@ -34,13 +34,6 @@ namespace RSR
                 Address = "custom detail info"
             };
 
-            MyMap.Pins.Clear();
-            MyMap.Pins.Add(pin);
-
-            MyMap.MoveToRegion(
-            MapSpan.FromCenterAndRadius(
-            new Position(Latitude, Longitude), Distance.FromMeters(10)));
-
         }
 
         void OnBackBtnClicked(object sender, EventArgs e)

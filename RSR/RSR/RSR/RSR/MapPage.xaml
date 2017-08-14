@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:RSR; assembly=CustomMapRenderer"
              xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
              x:Class="RSR.MapPage">
 
@@ -23,10 +24,8 @@
         </Label>
         </Grid>
 
-               <maps:Map x:Name="MyMap"
-                HasZoomEnabled="True"
-                IsShowingUser="false"
-                MapType="Street"
+
+        <local:CustomMap x:Name="MyMap"
                 RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent,Property=Height,Factor=0.87,Constant=0}"
                 RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent,Property=Width,Factor=1,Constant=0}"
                 RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent,Property=Height,Factor=0.13,Constant=0}"

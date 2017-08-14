@@ -2,10 +2,10 @@ RSR.Droid.MainActivity, RSR.Android;md5ce5c2a53bf22be59d1e4c76b5e4782b0.MainActi
 RSR.Droid.MainActivity, RSR.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5ce5c2a53bf22be59d1e4c76b5e4782b0.MainActivity
 RSR.Droid.MainActivity;md5ce5c2a53bf22be59d1e4c76b5e4782b0.MainActivity
 rsr.droid.MainActivity;md5ce5c2a53bf22be59d1e4c76b5e4782b0.MainActivity
-RSR.Droid.MapActivity, RSR.Android;md5ce5c2a53bf22be59d1e4c76b5e4782b0.MapActivity
-RSR.Droid.MapActivity, RSR.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5ce5c2a53bf22be59d1e4c76b5e4782b0.MapActivity
-RSR.Droid.MapActivity;md5ce5c2a53bf22be59d1e4c76b5e4782b0.MapActivity
-rsr.droid.MapActivity;md5ce5c2a53bf22be59d1e4c76b5e4782b0.MapActivity
+RSR.Droid.CustomMapRenderer, RSR.Android;md5ce5c2a53bf22be59d1e4c76b5e4782b0.CustomMapRenderer
+RSR.Droid.CustomMapRenderer, RSR.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5ce5c2a53bf22be59d1e4c76b5e4782b0.CustomMapRenderer
+RSR.Droid.CustomMapRenderer;md5ce5c2a53bf22be59d1e4c76b5e4782b0.CustomMapRenderer
+rsr.droid.CustomMapRenderer;md5ce5c2a53bf22be59d1e4c76b5e4782b0.CustomMapRenderer
 RSR.Droid.SplashActivity, RSR.Android;md5ce5c2a53bf22be59d1e4c76b5e4782b0.SplashActivity
 RSR.Droid.SplashActivity, RSR.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5ce5c2a53bf22be59d1e4c76b5e4782b0.SplashActivity
 RSR.Droid.SplashActivity;md5ce5c2a53bf22be59d1e4c76b5e4782b0.SplashActivity
